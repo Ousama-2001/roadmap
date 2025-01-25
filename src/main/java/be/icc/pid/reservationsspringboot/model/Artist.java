@@ -1,7 +1,6 @@
 package be.icc.pid.reservationsspringboot.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,5 +11,10 @@ import lombok.NoArgsConstructor;
 @Table(name="artists")
 
 public class Artist {
-    
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private Long id;
+    private String firstname;
+    private String lastname;
+
 }
