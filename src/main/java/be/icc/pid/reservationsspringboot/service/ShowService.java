@@ -1,6 +1,7 @@
 package be.icc.pid.reservationsspringboot.service;
 
 
+
 import be.icc.pid.reservationsspringboot.model.Location;
 import be.icc.pid.reservationsspringboot.model.Show;
 import be.icc.pid.reservationsspringboot.repository.ShowRepository;
@@ -49,5 +50,4 @@ public class ShowService {
     public List<Show> getFromLocation(Location location) {
         return repository.findByLocation(location);
     }
-
 }
