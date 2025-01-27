@@ -8,6 +8,7 @@ CREATE TABLE `shows`
     `bookable`    tinyint(1)                              NOT NULL,
     `created_at`  datetime(6)                             NOT NULL,
     `updated_at`  datetime(6)                             DEFAULT NULL,
+    `price` decimal(10,2)                                 DEFAULT NULL,
     `location_id` int(11)                                 DEFAULT NULL,
     PRIMARY KEY (id)
 ) ENGINE = InnoDB
